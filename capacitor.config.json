@@ -1,0 +1,7 @@
+{
+  "appId": "com.pixelatedcheese1.midify",
+  "appName": "Midify",
+  "webDir": "www",
+  "backgroundColor": "#000000",
+  "android": { "allowMixedContent": false }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "midify",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/filesystem": "^7.0.0",
+    "spessasynth_core": "^4.3.22",
+    "spessasynth_lib": "^4.3.14"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0",
+    "esbuild": "^0.25.0"
+  }
+}

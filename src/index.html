@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#000000">
+<title>Midify</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <main id="view"></main>
+
+  <div id="mini" class="hidden">
+    <div class="mini-main" id="miniOpen">
+      <div class="art sm" id="miniArt"></div>
+      <div class="mini-text"><div class="t" id="miniTitle"></div><div class="a" id="miniArtist"></div></div>
+    </div>
+    <button class="icon" id="miniPlay" aria-label="Play/Pause"></button>
+    <div class="mini-bar"><div id="miniFill"></div></div>
+  </div>
+
+  <nav id="tabs">
+    <button data-tab="home" class="on"><svg viewBox="0 0 24 24"><path d="M12 3 3 10v11h6v-7h6v7h6V10z"/></svg>Home</button>
+    <button data-tab="search"><svg viewBox="0 0 24 24"><path d="M10 3a7 7 0 1 0 4.2 12.6l5.6 5.6 1.4-1.4-5.6-5.6A7 7 0 0 0 10 3zm0 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10z"/></svg>Search</button>
+    <button data-tab="library"><svg viewBox="0 0 24 24"><path d="M3 3h2v18H3zm5 0h2v18H8zm5.5.5 6.9 1.9-4.7 16.6-6.9-1.9z"/></svg>Your Library</button>
+  </nav>
+
+  <section id="player" class="hidden"></section>
+  <section id="settings" class="hidden"></section>
+  <section id="browser" class="hidden"></section>
+  <div id="toast"></div>
+</div>
+<input type="file" id="filePick" multiple hidden>
+<input type="file" id="sfPick" accept=".sf2,.sf3,.dls,.sfogg" hidden>
+<script type="module" src="app.js"></script>
+</body>
+</html>
